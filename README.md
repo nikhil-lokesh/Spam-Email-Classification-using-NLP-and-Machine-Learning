@@ -4,8 +4,9 @@ The purpose of this code is to create a simple web interface that allows users t
 Detailed Breakdown:
 Import Libraries:
 
-python
-Copy Code
+python 
+Copy code
+
 
 
 import streamlit as st
@@ -15,7 +16,7 @@ pickle: A module for loading (unpickling) the pre-trained machine learning model
 Load Pre-trained Model and Vectorizer:
 
 python
-Copy Code
+Copy code
 
 
 model = pickle.load(open(r'C:\Users\nikhi\OneDrive\Desktop\Spam_AICTE_PRO\spam123.pkl', 'rb'))
