@@ -4,8 +4,7 @@ The purpose of this code is to create a simple web interface that allows users t
 Detailed Breakdown:
 Import Libraries:
 
-python 
-Copy code
+
 
 
 
@@ -15,8 +14,6 @@ streamlit: A web framework for creating interactive web applications directly fr
 pickle: A module for loading (unpickling) the pre-trained machine learning model and vectorizer.
 Load Pre-trained Model and Vectorizer:
 
-python
-Copy code
 
 
 model = pickle.load(open(r'C:\Users\nikhi\OneDrive\Desktop\Spam_AICTE_PRO\spam123.pkl', 'rb'))
@@ -25,8 +22,6 @@ Load the trained model from the specified file path.
 Load the text vectorizer (CountVectorizer or similar) from the specified file path. These were previously saved using the pickle module.
 Define the main Function:
 
-python
-Copy Code
 
 
 def main():
@@ -37,8 +32,7 @@ Set the app title.
 Add a markdown description explaining the app's functionality.
 User Input:
 
-python
-Copy Code
+
 
 
 user_input = st.text_area("Enter your email for classification", height=150, max_chars=1000)
@@ -46,8 +40,6 @@ Create a text area widget for users to enter the email they want to classify.
 Set some constraints like height and maximum characters allowed.
 Classify Button:
 
-python
-Copy Code
 
 
 if st.button("Classify Email"):
@@ -73,9 +65,6 @@ Display the Result:
 If the model predicts 0, show a success message indicating the email is not spam.
 If the model predicts 1, show an error message indicating the email is spam.
 Run the Application:
-
-python
-Copy Code
 
 
 main()
