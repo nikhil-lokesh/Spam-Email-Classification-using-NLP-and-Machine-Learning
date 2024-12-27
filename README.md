@@ -69,6 +69,8 @@ Run the Application:
 
 main()
 Call the main() function to run the application.
+
+
 Summary:
 This Streamlit application provides an interface for users to input an email text.
 It uses a pre-trained machine learning model to classify the email as spam or not spam.
